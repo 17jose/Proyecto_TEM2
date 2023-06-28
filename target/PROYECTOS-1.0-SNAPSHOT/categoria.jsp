@@ -18,10 +18,12 @@ if(session.getAttribute("logueado")!="ok"){
     <body>
        
         <div class="container">
-            <h1>Categoria</h1>
+            
             <jsp:include page="WEB-INF/menu.jsp">
                 <jsp:param name="opcion" value="categoria"/>
             </jsp:include>
+            <br>
+            <h1>Categoria</h1>
             <br>
             <a href="CategoriaController?action=add" class="btn btn-primary btn-sm"><i class="fa-regular fa-square-plus"></i> Nuevo</a>
             <table class="table table-striped">
